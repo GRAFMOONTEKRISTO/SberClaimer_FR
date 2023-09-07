@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Profile from "./components/Profile/Profile";
 import Dialogs from "./components/Dialogs/Dialogs";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Fips from "./components/Fips/Fips";
 
 const App = (props) => {
 
@@ -17,6 +18,7 @@ const App = (props) => {
                     <Routes>
                         <Route path='/dialogs' element={<Dialogs state={props.state.messagesPage} />}/>
                         <Route path='/profile' element={<Profile state={props.state.profilePage}/>}/>
+                        <Route path='/fips' element={<Fips/>}/>
                     </Routes>
                 </div>
             </div>

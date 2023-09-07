@@ -19,6 +19,9 @@ const Navbar = () => {
         <dir >
             <NavLink to="/settings" className = { navData => navData.isActive ? classes.active : classes.item }>Settings</NavLink>
         </dir>
+        <dir >
+            <NavLink to="/FIPS" className = { navData => navData.isActive ? classes.active : classes.item }>FIPS</NavLink>
+        </dir>
 
     </nav>
 

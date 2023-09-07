@@ -6,6 +6,10 @@ const MyPosts = (props) => {
     let postsElements = props.posts
         .map(p => <Post message={p.message} likesCount={p.likesCount}/>)
 
+    let addPost = () => {
+        alert("samurai.ru")
+    }
+
     return (
         <div className={classes.postsBlock}>
             <h3>My posts</h3>
@@ -15,7 +19,7 @@ const MyPosts = (props) => {
                     <textarea></textarea>
                 </div>
                 <div>
-                    <button>Add posts</button>
+                    <button onClick={ addPost }>Add posts</button>
                 </div>
             </div>
             <div className={classes.posts}>
